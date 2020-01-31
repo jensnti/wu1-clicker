@@ -83,7 +83,7 @@ switch (arr[0]) {
  * HTML / DOM
  */
 
-// select element(s)
+// select element(s) på alika sätt, beronde på vad du behöver
 let header = document.getElementsByTagName("h1"); // elements -> array
 console.log(header);
 
@@ -96,7 +96,7 @@ console.log(header);
 header = document.querySelector("#header");
 console.log(header);
 
-
+// skapa ett element, sätt dess text, lägg till en klass och fäst det på body taggen
 let p = document.createElement('p');
 p.textContent = "Hejsan!";
 p.classList.add('lead');
