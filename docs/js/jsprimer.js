@@ -122,3 +122,5 @@ do {
 } while (guess !== rand);
 
 alert("Winner!");
+
+// https://www.destroyallsoftware.com/talks/wat
