@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color {
+            color: red;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <main style="margin: 0 auto; width: 80%;">
+        <h1>Javascript, övningar</h1>
+        <p class="test-class">Hej</p>
+        <p class="test-class">Hej</p>
+        <p id="test-id">Hej igen</p>
+    </main>
+    <script>
+        // var num = 0;
+        let num = 0;
+        const num1 = 0;
+
+        num += 235 + 2;
+        console.log(num);
+
+        let test = document.getElementById('test-id');
+        console.log(test);
+        test.classList.add('color');
+
+        let test1 = document.getElementsByClassName('test-class');
+        console.log(test1[1]);
+
+        let test2 = document.getElementsByTagName('h1');
+        console.log(test2);
+
+        let test3 = document.querySelector('p');
+        console.log(test3);
+    
+        let person = {
+            name: 'Jens',
+            level: 100
+        };
+    </script>
+    <script src="js/prac.js"></script>
+</body>
+</html>
