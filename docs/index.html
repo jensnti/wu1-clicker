@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clickerific</title>
+    <title>PIXELMAN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <p id="score">Score: 0</p>
+    <header class="d-flex container score">
+        <h1 class="score-text">Score: <span id="score">0</span></h1>
     </header>
-    <main>
-        <button id="clicker" class="button clicker">Click</button>
-        <button id="bonus" class="button bonus">Bonus</button>
+    <main class="d-flex container">
+        <section class="d-flex click-hud">
+            <section class="d-flex status">
+                <h1 id="status" class="status-text">Status:</h1>
+                <div class="status-image">
+                    <img src="img/pixelman_base.png" alt="dude" class="dude">
+                    <img src="img/pixelman_armor.png" alt="dude" class="dude hidden">
+                    <img src="img/pixelman_sword.png" alt="dude" class="sword hidden">
+                </div>
+            </section>
+            <section class="d-flex upgrades">
+                <button id="bonus" class="button bonus">Get a sword!</button>
 
-        <p>För introduktion och info kring javascript kolla <a href="jsprimer.html">här</a>.</p>
+                <button id="mega" class="button bonus hidden">Aquire pointless armor!</button>
+            </section>
+        </section>
+        <section class="d-flex click-main">
+            <button id="clicker" class="button clicker">More power!</button>
+        </section>
     </main>
     <script src="js/clicker.js"></script>
 </body>

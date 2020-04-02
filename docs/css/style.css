@@ -1,97 +1,116 @@
-/* Legit snyggt */
 html, body {
     height: 100%;
 }
 
 body {
-    animation: bg 10s ease infinite;
-    background-color: rgba(34,193,195,1);
-    background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    background-size: 300% 300%;
-}
-/* @keyframes AnimationName {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-} */
-@keyframes bg {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    background-image: linear-gradient(180deg, rgba(137, 87, 156, 0.53) 0%, rgba(46, 52, 115, 0) 100%);
+    /* background: rgb(137,87,156);
+    background: linear-gradient(180deg, rgba(137,87,156,1) 0%, rgba(46,52,115,1) 100%); */
 }
 
-header {
-    width: 80%;
-    margin: 50px auto;
+h1 {
+    font-size: 2em;
+}
+
+.d-flex {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-#score {
-    font-size: 3em;
+.container {
+    height: 100%;
+    width: 90%;
+    margin: 2em auto;
+    flex-direction: row;
 }
 
-main {
-    width: 80%;
-    height: 60%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.click-hud {
     flex-direction: column;
+    flex: 1 1;
 }
 
-.lead {
-    font-weight: bold;
+.click-main {
+    flex: 1 2;
+    justify-content: center;
+    /* align-items: center; */
 }
 
-button {
-    width: 220px;
-    height: 220px;
+.score {
+    height: 20%;
+    align-items: center;
+}
+
+.status {
+    height: 20%;
+    align-items: baseline;
+}
+
+.upgrades {
+    height: 20%;
+    align-items: center;
+}
+
+.button {
+    color: #fff;
+    background-color:rgb(224, 43, 50);
     border-radius: 100%;
-    border: 0;
     margin: 1em;
+    font-family: 'Press Start 2P', cursive;
+    border: 1px solid black;
 }
 
 button:focus {
     outline: 0px;
 }
 
-.button {
-    padding: 0.2em;
-    padding-bottom: 0.6em;
-    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
-    background: rgba(253,187,45,1);
-    text-decoration: none;
-    color: rgb(200, 243, 232);
-    font-size: 1.8em;
-    font-weight: 800;
-    line-height: 1.5;
-    text-transform: uppercase;
+button:active {
+    background-color: rgba(224, 43, 50, 0.8);
+}
+
+.clicker {
+    margin-top: 5em;
+    width: 200px;
+    height: 200px;
+}
+
+.bonus {
+    width: 100px;
+    height: 100px;
+}
+
+.status-image {
+    margin-left: 2em;
+    width: 62px;
+    height: 100px;
+    animation: underBlink 1s infinite;
     position: relative;
-    transition: background-color .6s ease;
-    overflow: hidden;
 }
-.button:after {
-    content: "";
+
+.dude {
+    bottom: 0px;
+    left: 4px;
     position: absolute;
-    width: 0;
-    height: 0;
-    top: 50%;
-    left: 50%;
-
-    transform-style: flat;
-    transform: translate3d(-50%, -50%, 0);
-
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 100%;
-    transition: width .3s ease, height .3s ease;
 }
-.button:hover {
-    background: rgba(34,193,195,1)
+
+.sword {
+    position: absolute;
 }
-.button:active:after {
-    width: 220px;
-    height: 220px;
+
+.hidden {
+    display: none;
+}
+
+@keyframes underBlink {
+    0%   { border-bottom: 6px solid rgba(0, 0, 0, 0.1); }
+    50% { border-bottom: 6px solid rgba(0, 0, 0, 1); }
+    100%   { border-bottom: 6px solid rgba(0, 0, 0, 0.1); }
+}
+
+.status-text {
+    
+}
+
+#score {
+    animation: underBlink 1s infinite;
 }
