@@ -1,6 +1,7 @@
 # Clicker, webbprojekt
 
-Du har fått i uppdrag att designa och skapa ett clicker-spel från Kakmonstret AB. Till ditt förfogande har du en viss del javascript kod som en tidigare anställd lämnat efter sig, använd den.
+Du har fått i uppdrag att designa och skapa ett clicker-spel från Kakmonstret AB.
+Till ditt förfogande har du en viss del javascript kod som en tidigare anställd lämnat efter sig, använd den.
 
 En clicker, eller mer specifikt en cookie-clicker är ett spel, läs mer [här](https://en.wikipedia.org/wiki/Cookie_Clicker) 
 
@@ -75,7 +76,7 @@ Avsluta ditt arbete med att samla ihop din dokumentation och reflektera över ar
 
 ### Inlämning
 
-* Dokumentation, Post mortem
+* Dokumentation, Post mortem om det behövs / det kan vara ganska kort förutsatt att du gjort detta ordentligt tidigare
 * Git-repo m. utförliga commits
 * Kanban bräde
 * Webbplatsen
